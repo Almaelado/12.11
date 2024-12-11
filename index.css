@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#betuk {
+    margin: 20px;
+    display: flex; /* Az összes betű sorba rendezi */
+    justify-content: center; /* A betűket középre rendezi */
+    flex-wrap: wrap; /* Ha a képernyő kicsi, a betűk új sorba kerülnek */
+}
+
+.betu {
+    display: inline-block;
+    width: 60px;  /* A betűk szélessége megegyezik a cellák szélességével */
+    height: 60px; /* A betűk magassága megegyezik a cellák magasságával */
+    margin: 5px;  /* Kis távolság a betűk között */
+    background-color: lightblue;
+    text-align: center;
+    line-height: 60px; /* A betűk vertikális középre igazítása */
+    font-size: 32px; /* A betűk mérete */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cellak {
+    margin-left: 100px;  /* Balra 100px margó */
+    margin-right: 100px; /* Jobbra 100px margó */
+    margin-top: 20px;
+    width: calc(100% - 200px); /* A táblázat szélessége kitölti a rendelkezésre álló helyet, figyelembe véve a margókat */
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 60px;  /* Fixált cellaszélesség */
+    height: 60px; /* Fixált cellamagasság */
+    border: 1px solid black;
+    vertical-align: middle;
+    background-color: white;
+    text-align: center;
+}
+
+td.droppable {
+    background-color: lightgreen;
+}
